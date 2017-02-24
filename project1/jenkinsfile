@@ -1,5 +1,5 @@
 #!groovy
-node ('opscenter_runner'){
+node ('runner'){
     stage 'Stage 1'
         echo 'Hello World 1'
     stage 'Stage 2'
