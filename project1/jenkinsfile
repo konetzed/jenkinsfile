@@ -1,11 +1,7 @@
 #!groovy
-pipeline {
-    node ('runner')
-    stages {
-        stage('Example') {
-            steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-            }
-        }
-    }
+node ('opscenter_runner'){
+    stage 'Stage 1'
+        echo 'Hello World 1'
+    stage 'Stage 2'
+        echo 'Hello World 2'
 }
