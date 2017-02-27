@@ -3,7 +3,7 @@ node ('runner'){
     stage 'Stage 1'
           checkout scm
           sh  'pwd'
-          sh  'find . | grep -v ^.' 
+          sh  'ls -lR' 
 
     stage 'Stage 2'
 
