@@ -1,7 +1,9 @@
 #!groovy
 node ('runner'){
+
+    checkout scm
+
     stage 'Stage 1'
-          checkout scm
           sh  'pwd'
           sh  'ls -lR' 
 
