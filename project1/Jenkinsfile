@@ -1,11 +1,11 @@
 #!groovy
 node ('runner'){
     stage 'Stage 1'
-
+          checkout scm
           sh  'pwd'
           sh  'find .'
 
     stage 'Stage 2'
 
-        echo 'Hello World 2'
+       sh 'echo \'Hello World 2\''
 }
