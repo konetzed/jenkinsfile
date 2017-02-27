@@ -3,13 +3,14 @@ node ('runner'){
 
     checkout scm
 
-    stage 'Stage 1' 
+    stage ('Stage 1') {
 
           sh  'pwd'
           sh  'ls -lR' 
 
-    stage 'Stage 2' 
+    }
+    stage ('Stage 2') {
 
        sh 'echo \'Hello World 2\''
-    
+    }
 }
