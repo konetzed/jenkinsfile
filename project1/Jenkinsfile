@@ -3,7 +3,7 @@ node ('runner'){
     stage 'Stage 1'
           checkout scm
           sh  'pwd'
-          sh  'find .'
+          sh  'find . -not -path '*/\.*''
 
     stage 'Stage 2'
 
