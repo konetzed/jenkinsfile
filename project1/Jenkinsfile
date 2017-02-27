@@ -1,9 +1,10 @@
 #!groovy
 node ('runner'){
-    stage 'Stage 1'
-    {
-        pwd
-        find .
+    stage 'Stage 1'{
+        steps {
+            pwd
+            find .
+        }
     }
     stage 'Stage 2'
         echo 'Hello World 2'
